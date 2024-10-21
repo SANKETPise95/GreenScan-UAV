@@ -1,6 +1,7 @@
 # GreenScan UAV - UAVWeedSegmentation
 
 This repository provides the source code for "Deep Learning-based Early Weed Segmentation using UAV Images of Sorghum Fields". 
+![Healthy-sorghum-plants](https://github.com/user-attachments/assets/5fd81a37-2420-4d33-8714-57aeec20e2c2)
 
 <p align="center">
     <img src="readme_fig/supfigure4.jpg" alt="" width="100%"/>
