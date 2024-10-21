@@ -58,7 +58,7 @@ Predictions are based on a hold-out test-set.
 ## Installation
 1. Clone this project
 ```
-git clone git@github.com:grimmlab/UAVWeedSegmentation.git
+git clone https://github.com/SANKETPise95/GreenScan-UAV
 ```
 
 2. Install requirements
