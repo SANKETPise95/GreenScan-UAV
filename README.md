@@ -4,7 +4,8 @@ This repository provides the source code for "Deep Learning-based Early Weed Seg
 ![Healthy-sorghum-plants](https://github.com/user-attachments/assets/5fd81a37-2420-4d33-8714-57aeec20e2c2)
 
 <p align="center">
-    <img src="readme_fig/supfigure4.jpg" alt="" width="100%"/>
+    ![supfigure4](https://github.com/user-attachments/assets/24501236-5763-499e-8ff0-9d5aaf2db2e2)
+
 </p>
 
 **Figure 1**: Sharpness assessment for the dataset used in this study. The calculated sharpness matches the manual assessment of this dataset, 
@@ -38,7 +39,8 @@ The results of the best performing model (UNet + ResNet-34) are shown.
 ### Confusion Matrix
 The confusion matrix shows per-class accuracies for Background (BG), Sorghum (S) and Weed (W).
 <p align="center">
-    <img src="readme_fig/cm_subset_test.jpg" alt="Confusion Matrix" width="100%"/>
+    ![cm_subset_test](https://github.com/user-attachments/assets/334c416b-42a5-445d-96da-f1b5b46a6796)
+
 </p>
 
 **Figure 2**: Normalized confusion matrix by support size in percent shows the pixel-based classification results on the hold-out test-set. Background/soil is denoted by BG, sorghum by S and weed by W. **a** Test images with a high degree of motion blur (test_01 to test_03, as indicated in Figure 1). **b** Test images with less degree of motion blur (test_04 to test_07, as indicated in Figure 1).
@@ -46,7 +48,8 @@ The confusion matrix shows per-class accuracies for Background (BG), Sorghum (S)
 ### Example Predictions
 Predictions are based on a hold-out test-set.
 <p align="center">
-    <img src="readme_fig/example_pred.jpg" alt="Example Patches with Predictions" width="100%"/>
+    ![example_pred](https://github.com/user-attachments/assets/daba9d12-90ef-4d20-a9e1-8a136136d21a)
+
 </p>
 
 **Figure 3**: Qualitative results on the hold-out test-set. Image patches of size 400x400 pixel² are cropped from each test image to show more details. Background (BG) is colored in gray, sorghum (S) in blue and weed (W) pixels in orange. The difference map shows only the misclassifications between ground truth and prediction. **a-c** Examples with a high degree of motion blur. **a** The general shape of weeds is predicted correctly. **b** Large weed plants that could not be removed before sowing the field. Most pixels are predicted correctly. There are small artifacts visible, which are due to the patching process. **c** Weeds intersecting with sorghum plants were predicted correctly. **d-f** Examples with a low degree of motion blur showing weeds and sorghum plants from different captures. The general shape is predicted correctly. **d** Patch from test_04. **e** Patch from test_05. **f** Patch from test_06. 
@@ -132,22 +135,3 @@ python3 retrain.py [architecture] [feature_extractor]
 # example
 python3 retrain.py unet resnet34
 ```
-
-# Publication and Citation
-Deep Learning-based Early Weed Segmentation using Motion Blurred UAV Images of Sorghum Fields  
-N Genze, R Ajekwe, Z Güreli, F Haselbeck, M Grieb, DG Grimm  
-Computers and Electronics in Agriculture, 2022 (https://doi.org/10.1016/j.compag.2022.107388) 
-
-
-@article{GENZE2022107388,
-title = {Deep learning-based early weed segmentation using motion blurred UAV images of sorghum fields},
-journal = {Computers and Electronics in Agriculture},
-volume = {202},
-pages = {107388},
-year = {2022},
-issn = {0168-1699},
-doi = {https://doi.org/10.1016/j.compag.2022.107388},
-url = {https://www.sciencedirect.com/science/article/pii/S0168169922006962},
-author = {Nikita Genze and Raymond Ajekwe and Zeynep Güreli and Florian Haselbeck and Michael Grieb and Dominik G. Grimm},
-keywords = {Deep learning, Weed detection, Weed segmentation, UAV, Precision agriculture}
-}
