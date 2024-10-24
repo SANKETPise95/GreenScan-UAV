@@ -4,6 +4,7 @@ This repository provides the source code for "Deep Learning-based Early Weed Seg
 ![Healthy-sorghum-plants](https://github.com/user-attachments/assets/5fd81a37-2420-4d33-8714-57aeec20e2c2)
 
 <p align="center">
+
 ![supfigure4](https://github.com/user-attachments/assets/24501236-5763-499e-8ff0-9d5aaf2db2e2)
 
 </p>
@@ -39,6 +40,7 @@ The results of the best performing model (UNet + ResNet-34) are shown.
 ### Confusion Matrix
 The confusion matrix shows per-class accuracies for Background (BG), Sorghum (S) and Weed (W).
 <p align="center">
+
 ![cm_subset_test](https://github.com/user-attachments/assets/334c416b-42a5-445d-96da-f1b5b46a6796)
 
 </p>
@@ -48,6 +50,7 @@ The confusion matrix shows per-class accuracies for Background (BG), Sorghum (S)
 ### Example Predictions
 Predictions are based on a hold-out test-set.
 <p align="center">
+
 ![example_pred](https://github.com/user-attachments/assets/daba9d12-90ef-4d20-a9e1-8a136136d21a)
 
 </p>
